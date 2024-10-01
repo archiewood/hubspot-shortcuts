@@ -5,8 +5,7 @@
   "description": "Add custom keyboard shortcuts to HubSpot for improved navigation.",
   "permissions": [
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ],
   "icons": {
     "16": "icons/icon.png",
