@@ -4,6 +4,8 @@
 
 Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
+![Create New Contact](./images/create-new.gif)
+
 ## Features
 
 - **Navigation Shortcuts**: Navigate between HubSpot pages using single key presses.

@@ -1,3 +1,5 @@
 exclude.txt
 README.md
 package.sh
+images/*
+icons/icon-noborder.svg
