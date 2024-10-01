@@ -32,7 +32,7 @@ Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
 There is currently no Chrome Web Store listing for this extension.
 
-1. Clone the repository.
+1. Download and uzip `hubspot-keyboard-shortcuts.zip` from the [latest release](https://github.com/archiewood/hubspot-shortcuts/releases)
 2. Open Chrome (or any Chromium-based browser) and navigate to chrome://extensions.
 3. Enable "Developer mode" in the top right corner.
 4. Click "Load unpacked."
