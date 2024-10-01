@@ -1,4 +1,6 @@
-# HubSpot Keyboard Shortcuts
+
+
+# <img src="./icons/icon.png" alt="HubSpot Keyboard Shortcuts" style="height:1em;"> HubSpot Keyboard Shortcuts
 
 Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
