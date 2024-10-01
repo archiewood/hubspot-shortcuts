@@ -1,24 +1,28 @@
-# HubSpot Keyboard Shortcuts Extension
+# HubSpot Keyboard Shortcuts
 
-This extension provides keyboard shortcuts to HubSpot.
+Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
 ## Features
 
 - **Navigation Shortcuts**: Navigate between HubSpot pages using single key presses.
-- **Action Shortcuts**: Perform common actions like opening the search bar or creating a new object with ease.
+- **Action Shortcuts**: Perform common actions on pages with single key presses.
 
 ## Keyboard Shortcuts
 
 ### Navigation Shortcuts
 
-- **D**: Navigate to the Contacts page.
-- **L**: Navigate to the Prospecting Leads page.
-- **S**: Navigate to the Sequences page.
+| Shortcut | Action |
+|----------|--------|
+| `D` | Navigate to the Contacts page |
+| `L` | Navigate to the Prospecting Leads page |
+| `S` | Navigate to the Sequences page |
 
 ### Action Shortcuts
 
-- **/**: Open the search bar.
-- **N**: Press the create button to create a new object.
+| Shortcut | Action |
+|----------|--------|
+| `/` | Open the search bar |
+| `N` | Press the create button to create a new object |
 
 ## Installation
 
@@ -32,10 +36,4 @@ There is currently no Chrome Web Store listing for this extension.
 
 ## Contributing
 
-Contributions to this extension are welcome! If you have suggestions for new shortcuts or improvements, please open an issue or submit a PR.
-
-## How It Works
-
-### Extracting HubSpot ID
-
-The extension extracts an 8-digit HubSpot ID from the current URL to dynamically navigate to the correct pages.
+Contributions are welcome! If you have suggestions for new shortcuts or improvements, please open an issue or submit a PR.
