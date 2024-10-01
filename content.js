@@ -20,13 +20,20 @@ const actionShortcuts = {
 };
 
 document.addEventListener('keydown', (event) => {
-  const key = event.key.toUpperCase();
-  if (navigationShortcuts[key]) {
-    event.preventDefault();
-    navigationShortcuts[key]();
-  } else if (actionShortcuts[key]) {
-    event.preventDefault();
-    actionShortcuts[key]();
+  const isInputField = document.activeElement.tagName === 'INPUT' || 
+                       document.activeElement.tagName === 'TEXTAREA' || 
+                       document.activeElement.isContentEditable;
+
+  // Only process shortcuts if not in an input field
+  if (!isInputField) {
+    const key = event.key.toUpperCase();
+    if (navigationShortcuts[key]) {
+      event.preventDefault();
+      navigationShortcuts[key]();
+    } else if (actionShortcuts[key]) {
+      event.preventDefault();
+      actionShortcuts[key]();
+    }
   }
 });
 
