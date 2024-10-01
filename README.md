@@ -23,7 +23,6 @@ Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
 | Shortcut | Action |
 | --- | --- |
-| `/` | <p>Open Search Bar</p> |
 | `N` | <p>Select Create New Button</p> |
 | `A` | <p>Select All Records</p> |
 | `E` | <p>Enroll in Sequence</p> |
