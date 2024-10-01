@@ -1,0 +1,1 @@
+zip -r hubspot-keyboard-shortcuts.zip * -x@exclude.txt
