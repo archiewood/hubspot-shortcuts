@@ -1,0 +1,1 @@
+jsdoc2md content.js -c jsdoc.json -t README.hbs > README.md

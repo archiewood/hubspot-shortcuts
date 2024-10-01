@@ -11,22 +11,18 @@ Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
 ## Keyboard Shortcuts
 
-### <p>Navigation Shortcuts</p>
+{{#orphans ~}}
+### {{{description}}}
+{{>summary~}}
+{{#if params}}
 
-| Shortcut | Action |
-| --- | --- |
-| `D` | <p>Navigate to Deals</p> |
-| `L` | <p>Navigate to Leads</p> |
-| `S` | <p>Navigate to Sequences</p> |
+{{tableHead params "name|Shortcut" "description|Action" ~}}
+{{#tableRow params "name" "description" ~}}
+| `{{>param-table-name}}` | {{{stripNewlines (inlineLinks description)}}} |
+{{/tableRow}}
 
-### <p>Action Shortcuts</p>
-
-| Shortcut | Action |
-| --- | --- |
-| `/` | <p>Open Search Bar</p> |
-| `N` | <p>Select Create New Button</p> |
-| `A` | <p>Select All Records</p> |
-| `E` | <p>Enroll in Sequence</p> |
+{{/if}}
+{{/orphans~}}
 
 ## Installation
 

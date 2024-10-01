@@ -6,17 +6,30 @@ function extractHubSpotID() {
   return match ? match[0] : null;
 }
 
+/**
+ * Navigation Shortcuts
+ * @param D - Navigate to Deals
+ * @param L - Navigate to Leads
+ * @param S - Navigate to Sequences
+ */
 const navigationShortcuts = {
   "D": () => navigateToPage(`/contacts/{id}/objects/0-3/`),
   "L": () => navigateToPage(`/prospecting/{id}/leads`),
   "S": () => navigateToPage(`/sequences/{id}`)
 };
 
+/**
+ * Action Shortcuts
+ * @param / - Open Search Bar
+ * @param N - Select Create New Button
+ * @param A - Select All Records
+ * @param E - Enroll in Sequence
+ */
 const actionShortcuts = {
   "/": () => openSearchBar(),
   "N": () => pressCreateButton(),
   "A": () => selectAllRecords(),
-  "E": () => clickEnrollInSequenceButton() // Added new shortcut for 'E'
+  "E": () => clickEnrollInSequenceButton()
 };
 
 document.addEventListener('keydown', (event) => {
