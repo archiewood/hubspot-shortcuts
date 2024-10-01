@@ -6,7 +6,6 @@ function extractHubSpotID() {
   return match ? match[0] : null;
 }
 
-// Default keyboard shortcuts
 const navigationShortcuts = {
   "D": () => navigateToPage(`/contacts/{id}/objects/0-3/`),
   "L": () => navigateToPage(`/prospecting/{id}/leads`),
@@ -15,10 +14,11 @@ const navigationShortcuts = {
 
 const actionShortcuts = {
   "/": () => openSearchBar(),
-  "N": () => pressCreateButton()
+  "N": () => pressCreateButton(),
+  "A": () => selectAllRecords(),
+  "E": () => clickEnrollInSequenceButton() // Added new shortcut for 'E'
 };
 
-// Listen for keydown events
 document.addEventListener('keydown', (event) => {
   const key = event.key.toUpperCase();
   if (navigationShortcuts[key]) {
@@ -30,10 +30,10 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-// Function to open the search bar
+// Function to open the search bar - Doesn't work
 function openSearchBar() {
-  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-  const key = isMac ? 'Meta' : 'Control';
+  const isMac = /Macintosh/.test(navigator.userAgent);
+  const key = isMac ? 'meta' : 'control';
   const event = new KeyboardEvent('keydown', {
     key: 'k',
     code: 'KeyK',
@@ -44,13 +44,20 @@ function openSearchBar() {
   document.dispatchEvent(event);
 }
 
-// Function to press the create button
 function pressCreateButton() {
   const createButton = document.querySelector('#hs-global-toolbar-object-create');
   if (createButton) {
     createButton.click();
   }
 }
+
+function selectAllRecords() {
+  document.querySelector('[aria-label="Select all records."]').click();
+}
+
+function clickEnrollInSequenceButton() {
+    document.querySelector('[data-selenium-test="bulk-action-enroll-in-sequence"]').click();
+  }
 
 // Generic function to navigate to a page
 function navigateToPage(pathTemplate) {
