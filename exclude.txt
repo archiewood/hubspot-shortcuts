@@ -3,3 +3,6 @@ README.md
 package.sh
 images/*
 icons/icon-noborder.svg
+README.hbs
+generate-docs.sh
+jsdoc.json
