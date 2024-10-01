@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "HubSpot Keyboard Shortcuts",
+  "version": "0.1",
+  "description": "Add custom keyboard shortcuts to HubSpot for improved navigation.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://app.hubspot.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
