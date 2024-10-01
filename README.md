@@ -1,5 +1,3 @@
-
-
 # <img src="./icons/icon-noborder.svg" alt="HubSpot Keyboard Shortcuts" style="height:1em;"> HubSpot Keyboard Shortcuts
 
 Adds keyboard shortcuts to HubSpot for chromium-based browsers.
@@ -27,12 +25,14 @@ Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 |----------|--------|
 | `/` | Open the search bar |
 | `N` | Press the create button to create a new object |
+| `A` | Select all records |
+| `E` | Enroll in sequence |
 
 ## Installation
 
 There is currently no Chrome Web Store listing for this extension.
 
-1. Download and uzip `hubspot-keyboard-shortcuts.zip` from the [latest release](https://github.com/archiewood/hubspot-shortcuts/releases)
+1. Download and unzip `hubspot-keyboard-shortcuts.zip` from the [latest release](https://github.com/archiewood/hubspot-shortcuts/releases)
 2. Open Chrome (or any Chromium-based browser) and navigate to chrome://extensions.
 3. Enable "Developer mode" in the top right corner.
 4. Click "Load unpacked."
