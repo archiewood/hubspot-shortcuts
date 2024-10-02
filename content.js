@@ -74,7 +74,13 @@ function navigateToPage(pathTemplate) {
   }
 }
 
-// Function to wrap URLs in links
+/**
+ * Makes URLs clickable
+ * 
+ * Searches for URLs in various HTML elements and wraps them
+ * with `<a>` tags to make them clickable.
+ * 
+ */
 function wrapURLsInLinks() {
   const elements = document.querySelectorAll('p:not(:empty), span:not(:empty), div:not(:empty) textarea:not(:empty)');
   const urlRegex = /^(https?:\/\/[^\s]+)$/;
