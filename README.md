@@ -2,9 +2,9 @@
 
 Adds keyboard shortcuts to HubSpot for chromium-based browsers.
 
-Install from [Chrome Web Store](https://chromewebstore.google.com/detail/hubspot-keyboard-shortcut/khnbcanbcolodegbjmmbfnmbgnlnjcce)
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hubspot-keyboard-shortcut/khnbcanbcolodegbjmmbfnmbgnlnjcce).
 
-![Create New Contact](./images/create-new.gif)
+![Promo](./images/promo.png)
 
 ## Features
 
