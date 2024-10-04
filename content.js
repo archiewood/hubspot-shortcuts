@@ -33,9 +33,9 @@ const actionShortcuts = {
 };
 
 document.addEventListener('keydown', (event) => {
-  const isInputField = document.activeElement.tagName === 'INPUT' ||
-    document.activeElement.tagName === 'TEXTAREA' ||
-    document.activeElement.isContentEditable;
+  const isInputField = (document.activeElement.tagName === 'INPUT' && document.activeElement.type !== 'checkbox') || 
+                       document.activeElement.tagName === 'TEXTAREA' || 
+                       document.activeElement.isContentEditable;
 
   // Only process shortcuts if not in an input field
   if (!isInputField) {
