@@ -23,17 +23,19 @@ const navigationShortcuts = {
  * @param N - Select Create New Button
  * @param A - Select All Records
  * @param E - Enroll in Sequence
+ * @param Ctrl/Cmd+Enter - Save
  */
 const actionShortcuts = {
   "N": () => pressCreateButton(),
   "A": () => selectAllRecords(),
-  "E": () => clickEnrollInSequenceButton()
+  "E": () => clickEnrollInSequenceButton(),
+  "CTRL+ENTER": () => clickSaveButton(), 
 };
 
 document.addEventListener('keydown', (event) => {
-  const isInputField = document.activeElement.tagName === 'INPUT' || 
-                       document.activeElement.tagName === 'TEXTAREA' || 
-                       document.activeElement.isContentEditable;
+  const isInputField = document.activeElement.tagName === 'INPUT' ||
+    document.activeElement.tagName === 'TEXTAREA' ||
+    document.activeElement.isContentEditable;
 
   // Only process shortcuts if not in an input field
   if (!isInputField) {
@@ -46,13 +48,15 @@ document.addEventListener('keydown', (event) => {
       actionShortcuts[key]();
     }
   }
+
+  if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') {
+    event.preventDefault();
+    actionShortcuts["CTRL+ENTER"]();
+  }
 });
 
 function pressCreateButton() {
-  const createButton = document.querySelector('#hs-global-toolbar-object-create');
-  if (createButton) {
-    createButton.click();
-  }
+  document.querySelector('#hs-global-toolbar-object-create').click();
 }
 
 function selectAllRecords() {
@@ -60,9 +64,24 @@ function selectAllRecords() {
 }
 
 function clickEnrollInSequenceButton() {
-    document.querySelector('[data-selenium-test="bulk-action-enroll-in-sequence"]').click();
-  }
+  document.querySelector('[data-selenium-test="bulk-action-enroll-in-sequence"]').click();
+}
 
+// This captures:
+// - Notes Save Button
+// - Log Call Save Button
+// - Send Email Button
+//
+// This does not capture:
+// - Create Task Button 
+// - Enroll in Sequence Button (sequence-enroll-controls__save-btn)
+// - Create Lead Button (data-selenium-test="create" data-test-id="create-button")
+// - Create Ticket Button (data-selenium-test="create" data-test-id="create-button")
+function clickSaveButton() {
+  document.querySelector('[data-selenium-test="rich-text-editor-controls__save-btn"]').click();
+  // document.querySelector('[data-selenium-test="create" data-test-id="create-button"]').click();
+ 
+}
 // Generic function to navigate to a page
 function navigateToPage(pathTemplate) {
   const id = extractHubSpotID();
