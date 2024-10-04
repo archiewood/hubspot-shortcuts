@@ -75,8 +75,7 @@ function clickEnrollInSequenceButton() {
 // This does not capture:
 // - Create Task Button 
 // - Enroll in Sequence Button (sequence-enroll-controls__save-btn)
-// - Create Lead Button (data-selenium-test="create" data-test-id="create-button")
-// - Create Ticket Button (data-selenium-test="create" data-test-id="create-button")
+
 function clickSaveButton() {
   document.querySelector('[data-selenium-test="rich-text-editor-controls__save-btn"]').click();
   // document.querySelector('[data-selenium-test="create" data-test-id="create-button"]').click();
