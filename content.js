@@ -23,7 +23,7 @@ const navigationShortcuts = {
  * @param N - Select Create New Button
  * @param A - Select All Records
  * @param E - Enroll in Sequence
- * @param Ctrl/Cmd+Enter - Save
+ * @param Ctrl/Cmd+Enter - Save/Send
  */
 const actionShortcuts = {
   "N": () => pressCreateButton(),
