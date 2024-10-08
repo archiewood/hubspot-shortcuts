@@ -12,19 +12,19 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 
 | Shortcut | Action |
 | --- | --- |
-| `D` | <p>Navigate to Deals</p> |
-| `L` | <p>Navigate to Leads</p> |
-| `S` | <p>Navigate to Sequences</p> |
+| <kbd>D</kbd> | <p>Navigate to Deals</p> |
+| <kbd>L</kbd> | <p>Navigate to Leads</p> |
+| <kbd>S</kbd> | <p>Navigate to Sequences</p> |
 
 
 ### <p>Action Shortcuts</p>
 
 | Shortcut | Action |
 | --- | --- |
-| `N` | <p>Select Create New Button</p> |
-| `A` | <p>Select All Records</p> |
-| `E` | <p>Enroll in Sequence</p> |
-| `Ctrl/Cmd+Enter` | <p>Save/Send</p> |
+| <kbd>N</kbd> | <p>Select Create New Button</p> |
+| <kbd>A</kbd> | <p>Select All Records</p> |
+| <kbd>E</kbd> | <p>Enroll in Sequence</p> |
+| <kbd>Ctrl/Cmd+Enter</kbd> | <p>Save/Send</p> |
 
 
 ### <p>Makes URLs clickable</p>
