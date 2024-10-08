@@ -24,6 +24,7 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 | `N` | <p>Select Create New Button</p> |
 | `A` | <p>Select All Records</p> |
 | `E` | <p>Enroll in Sequence</p> |
+| `Ctrl/Cmd+Enter` | <p>Save/Send</p> |
 
 
 ### <p>Makes URLs clickable</p>
