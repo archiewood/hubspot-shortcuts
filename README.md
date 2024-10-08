@@ -8,11 +8,6 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 
 ## Features
 
-- **Navigation Shortcuts**: Navigate between HubSpot pages using single key presses.
-- **Action Shortcuts**: Perform common actions on pages with single key presses.
-
-## Keyboard Shortcuts
-
 ### <p>Navigation Shortcuts</p>
 
 | Shortcut | Action |
@@ -20,6 +15,7 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 | `D` | <p>Navigate to Deals</p> |
 | `L` | <p>Navigate to Leads</p> |
 | `S` | <p>Navigate to Sequences</p> |
+
 
 ### <p>Action Shortcuts</p>
 
@@ -29,6 +25,11 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 | `A` | <p>Select All Records</p> |
 | `E` | <p>Enroll in Sequence</p> |
 | `Ctrl/Cmd+Enter` | <p>Save/Send</p> |
+
+
+### <p>Makes URLs clickable</p>
+<p>Searches for URLs in various HTML elements and wraps them
+with <code>&lt;a&gt;</code> tags to make them clickable.</p>
 
 ## Install from Source
 
