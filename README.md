@@ -25,6 +25,7 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hub
 | <kbd>A</kbd> | <p>Select All Records</p> |
 | <kbd>E</kbd> | <p>Enroll in Sequence</p> |
 | <kbd>Ctrl/Cmd+Enter</kbd> | <p>Save/Send</p> |
+| <kbd>M</kbd> | <p>Select More Actions Button</p> |
 
 
 ### <p>Makes URLs clickable</p>

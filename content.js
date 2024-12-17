@@ -24,11 +24,13 @@ const navigationShortcuts = {
  * @param A - Select All Records
  * @param E - Enroll in Sequence
  * @param Ctrl/Cmd+Enter - Save/Send
+ * @param M - Select More Actions Button
  */
 const actionShortcuts = {
   "N": () => pressCreateButton(),
   "A": () => selectAllRecords(),
   "E": () => clickEnrollInSequenceButton(),
+  "M": () => clickMoreActionsButton(),
   "CTRL+ENTER": () => clickSaveButton(), 
 };
 
@@ -78,9 +80,17 @@ function clickEnrollInSequenceButton() {
 
 function clickSaveButton() {
   document.querySelector('[data-selenium-test="rich-text-editor-controls__save-btn"]').click();
-  // document.querySelector('[data-selenium-test="create" data-test-id="create-button"]').click();
  
 }
+
+function clickMoreActionsButton() {
+  document.querySelector('[data-test-id="sidebar-overflow-actions-dropdown-button"]').click();
+}
+
+function clickLogEmail() {
+  document.querySelector('[data-selenium-test="log-email-button"]').click();
+}
+
 // Generic function to navigate to a page
 function navigateToPage(pathTemplate) {
   const id = extractHubSpotID();
